@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body class="body">
+    <div class="header">
+        <h1 class="title">Typing Game</h1>
+        <div class="word-timer">
+            <h4 id="word">Words will appear here</h4>
+            <h4 id="timer"></h4>
+        </div>
+    </div>
+
+    <div class="input">
+        <input oninput="checkStart(event)" type="text" class="form-control" id="inputlg" placeholder="Type &quot;start&quot; to play">
+    </div>
+
+    <div id="high-score">
+        <h4>High score: 0</h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
